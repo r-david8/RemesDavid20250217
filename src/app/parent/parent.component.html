@@ -1,1 +1,4 @@
-<p>parent works!</p>
+<input type="number" [(ngModel)]="a" placeholder="Enter first number">
+<input type="number" [(ngModel)]="b" placeholder="Enter second number">
+<app-child [a]="a" [b]="b" (result)="onResultCalculated($event)"></app-child>
+<p>Result: {{ result }}</p>
